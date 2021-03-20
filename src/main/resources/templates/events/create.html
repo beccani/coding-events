@@ -27,7 +27,7 @@
         <p class="error" th:errors="${event.contactEmail}"></p>
     </div>
 
-    <div class="form-group">
+    <div class="form-group"0>
         <label>Type
             <select th:field="${event.type}">
                 <option th:each="type : ${types}"
@@ -36,6 +36,7 @@
                 ></option>
             </select>
         </label>
+    </div>
 
     <div class="form-group">
         <input type="submit" value="Create Event" class="btn btn-success">
