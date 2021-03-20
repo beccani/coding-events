@@ -11,7 +11,9 @@
             <th>Category Name</th>
         </tr>
     </thead>
-    <tr th:each="eventCategory : ${eventCategory}">Category Name goes here!</tr>
+    <tr th:each="category : ${categories}">
+        <td th:text="${category.name}">Category Name goes here!</td>
+    </tr>
 </table>
 
 
