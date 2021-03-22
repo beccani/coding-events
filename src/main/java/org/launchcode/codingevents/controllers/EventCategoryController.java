@@ -42,6 +42,7 @@ public class EventCategoryController {
                                                  Errors errors, Model model){
         if (errors.hasErrors()) {
             model.addAttribute("title", "Create Category");
+            model.addAttribute(new EventCategory());
             return "eventCategories/create";
         }
 

@@ -12,7 +12,7 @@
         </tr>
     </thead>
     <tr th:each="category : ${categories}">
-        <td th:text="${category.name}">Category Name goes here!</td>
+        <td><a th:text="${category.name}" th:href="'/events?categoryId=' + ${category.id}">Category Name goes here!</a></td>
     </tr>
 </table>
 
